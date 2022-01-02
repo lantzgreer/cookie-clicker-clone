@@ -67,43 +67,67 @@
         <button class="btn-sm btn-danger" style="margin-bottom: 10px" id="stop">
           stop
         </button>
-        <div class="mt-3">
-          <button
-            type="button"
-            class="btn btn-warning"
-            id="tier1button"
-            disabled
-          >
-            <span style="font-size: 14px; font-weight: bold">10 CPS</span>
-          </button>
-          <button
-            type="button"
-            class="btn btn-warning"
-            id="tier2button"
-            disabled
-          >
-            <span style="font-size: 14px; font-weight: bold">100 CPS</span>
-          </button>
-          <button
-            type="button"
-            class="btn btn-warning"
-            id="tier3button"
-            disabled
-          >
-            <span style="font-size: 14px; font-weight: bold">500 CPS</span>
-          </button>
-          <button
-            type="button"
-            class="btn btn-warning"
-            id="tier4button"
-            disabled
-          >
-            <span style="font-size: 14px; font-weight: bold">5000 CPS</span>
-          </button>
+        <div class="mt-3 d-flex justify-content-center">
+          <div>
+            <button
+              type="button"
+              class="btn btn-warning m-1"
+              id="tier1button"
+              disabled
+            >
+              <span style="font-size: 14px; font-weight: bold">0.1 CPS</span>
+            </button>
+            <br />
+            <span style="font-size: 12px; font-weight: normal">Cost: </span>
+            <span style="font-size: 12px; font-weight: normal" id="tier1cost"
+              >10</span
+            >
+          </div>
+          <div>
+            <button
+              type="button"
+              class="btn btn-warning m-1"
+              id="tier2button"
+              disabled
+            >
+              <span style="font-size: 14px; font-weight: bold">0.3 CPS</span>
+            </button>
+            <br />
+            <span style="font-size: 12px; font-weight: normal">Cost: </span>
+            <span style="font-size: 12px; font-weight: normal">1000</span>
+          </div>
+          <div>
+            <button
+              type="button"
+              class="btn btn-warning m-1"
+              id="tier3button"
+              disabled
+            >
+              <span style="font-size: 14px; font-weight: bold">0.5 CPS</span>
+            </button>
+            <br />
+            <span style="font-size: 12px; font-weight: normal">Cost: </span>
+            <span style="font-size: 12px; font-weight: normal">10k</span>
+          </div>
+          <div>
+            <button
+              type="button"
+              class="btn btn-warning m-1"
+              id="tier4button"
+              disabled
+            >
+              <span style="font-size: 14px; font-weight: bold">1 CPS</span>
+            </button>
+            <br />
+            <span style="font-size: 12px; font-weight: normal">Cost: </span>
+            <span style="font-size: 12px; font-weight: normal">50k</span>
+          </div>
         </div>
       </main>
       <footer class="mt-auto text-white-50">
         <p>Total Cookies: <span id="counter">0</span></p>
+        <p>Cookies Per Second: <span id="rateAdded">0</span></p>
+        <div style="display: none" id="counter2">0</div>
       </footer>
     </div>
   </body>
